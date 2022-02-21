@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { WaterComponent } from './water/water.component';
+import { WaterWrapperComponent } from './water-wrapper/water-wrapper.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WaterComponent,
+    WaterWrapperComponent
   ],
   imports: [
     BrowserModule
