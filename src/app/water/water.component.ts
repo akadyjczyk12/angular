@@ -16,7 +16,7 @@ export class WaterComponent implements OnInit {
   private stream$: Observable<any>;
   constructor(private waterService: WaterPressureService) { }
 
-  ngOnInit() {
+  ngOnInit() { // test 
     this.stream$ = this.waterService.getStart()
     .pipe(
       switchMap(id => {return this.waterService.geStatus(id)})
